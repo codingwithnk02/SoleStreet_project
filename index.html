@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoleStree - Men's Shoes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">SoleStree</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#collection">Collection</a>
+            <ul class="dropdown-content">
+              <li><a href="#sneakers">Sneakers</a></li>
+              <li><a href="#loafers">Loafers</a></li>
+              <li><a href="#formal">Formal</a></li>
+              <li><a href="#casual">Casual</a></li>
+            </ul>
+          </li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Dark Mode -->
+    <button id="toggleMode">Toggle Dark Mode</button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Step into Style</h1>
+        <p>Explore the finest range of men's shoes at SoleStree</p>
+        <a href="#collection" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p>
+        SoleStree offers premium quality men's footwear designed for comfort and
+        style.
+      </p>
+    </section>
+
+    <!-- Product Collection with Search -->
+    <section class="collection" id="collection">
+      <h2>Our Collection</h2>
+      <input type="text" id="searchInput" placeholder="Search shoes..." />
+      <div class="shoes-grid">
+        <div class="shoe-card">
+          <img src="image1.jpg" alt="Sneakers" />
+          <h3>Sneakers</h3>
+          <a href="#myForm" class="btn buy-btn">Shop Now</a>
+        </div>
+        <div class="shoe-card">
+          <img src="image2.jpg" alt="Loafers" />
+          <h3>Loafers</h3>
+          <a href="#myForm" class="btn buy-btn">Shop Now</a>
+        </div>
+        <div class="shoe-card">
+          <img src="image6.jpg" alt="Formal" />
+          <h3>Formal</h3>
+          <a href="#myForm" class="btn buy-btn">Shop Now</a>
+        </div>
+        <div class="shoe-card">
+          <img src="image3.jpg" alt="Casual" />
+          <h3>Casual</h3>
+          <a href="#myForm" class="btn buy-btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="offers" id="offers">
+      <h2>Special Offers</h2>
+      <p>Up to 50% off on selected styles!</p>
+      <!-- Countdown Timer Section -->
+      <section class="countdown-section">
+        <p>Offer ends in: <span id="countdown">00:00</span></p>
+      </section>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="form">
+      <h2>Contact Us</h2>
+      <form id="myForm">
+        <input type="text" id="name" placeholder="Your Name" required /><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email"
+          required
+        /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+        /><br />
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-section">
+      <h2>Top Picks</h2>
+      <div class="slider-container">
+        <img class="slider-image" src="image2.jpg" alt="Shoe 1" />
+        <img class="slider-image" src="image1.jpg" alt="Shoe 2" />
+        <img class="slider-image" src="image6.jpg" alt="Shoe 3" />
+      </div>
+      <button onclick="prevSlide()">&#8592;</button>
+      <button onclick="nextSlide()">&#8594;</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <p>Contact: info@solestree.com</p>
+      <p>&copy; 2025 SoleStree</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
